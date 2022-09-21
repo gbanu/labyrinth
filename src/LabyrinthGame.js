@@ -17,6 +17,8 @@ const Button = ({ label, onClick }) => {
         height: 40,
         backgroundColor: "white",
         borderRadius: 30,
+        marginLeft: 10,
+        marginRight: 10,
       }}
       onClick={onClick}
     >
@@ -96,10 +98,9 @@ const LabyrinthGame = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          paddingRight: 20,
         }}
       >
-        <div>Level: {level}</div>
+        <div style={{ marginLeft: 10, marginRight: 10 }}>Level: {level}</div>
 
         {safe && <Button label={"GO"} onClick={go}></Button>}
       </div>
